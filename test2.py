@@ -1,1 +1,0 @@
-reduce(lambda x,y : y+x, 'abcde')
