@@ -16,4 +16,4 @@ while True:
     break
   print(len([i for i in plist if n<i<=2*n]))
 #시간초과를 피해야함
-#[ㅑ for i in List if (조건)] 기억하기
+#[i for i in List if (조건)] 기억하기
