@@ -1,15 +1,10 @@
 import sys
+N = int(sys.stdin.readline())
+L = []
 
-_ = int(sys.stdin.readline()) 
-N = sorted(map(int,sys.stdin.readline().split()))
-_ = int(sys.stdin.readline())
-M = list(map(int,sys.stdin.readline().split()))
+for _ in range(N):
+  L.append(list(map(int,sys.stdin.readline().split()))) 
 
-hashmap ={}
-for i in N:
-  if i in hashmap:
-    hashmap[i] += 1
-  else :
-    hashmap[i] = 1
-
-print(' '.join(str(hashmap[m]) if m in hashmap else '0' for m in M))
+L.sort()
+for i in L:
+  print(i[0],i[1])
